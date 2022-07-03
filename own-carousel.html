@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- owl css -->
+    <link rel="stylesheet" href="/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+</head>
+<body>
+    <div class="owl-carousel">
+        <div><img src="/photo_2021-11-04_22-26-08.jpg" alt=""></div>
+        <div><img src="/photo_2021-11-04_22-26-08.jpg" alt=""></div>
+        <div><img src="/photo_2021-11-04_22-26-08.jpg" alt=""></div>
+        <div><img src="/photo_2021-11-04_22-26-08.jpg" alt=""></div>
+        <div><img src="/photo_2021-11-04_22-26-08.jpg" alt=""></div>
+
+    </div>
+    <script src="/jquery.min.js"></script>
+    <script src="/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel(
+                {
+                    items: 4,
+                    loop: true,
+                    margin: 10,
+                    center: true,
+                    autoplay: false,
+                    autoplayTimeout: 1000,
+                });
+        })
+    </script>
+</body>
+</html>

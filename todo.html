@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="todoForm">
+        <input type="text" placeholder="Todo List Here..." id=""todoInput>
+        <button type="submit">Add to</button>
+        <button type="button">Clear</button>
+    </form>
+    <ul id="list"></ul>
+
+    <script src="/jquery.min.js"></script>
+    <script>
+        $("#todoForm").submit(function(event){
+            event.preventDefault();
+            if($("#todoInput").val()==""){
+                alert("Enter todo list");
+            }else{
+                const li=$("<li></li>");
+                li.append('<input type="checkbox class="completed">' );
+                li.append($("#todoIput").val());
+                li.append("<a href='#' class='remove'>Remove</a>");
+                li.appendTo($)
+                
+            }
+        })
+    </script>
+
+
+    
+</body>
+</html>
